@@ -1,0 +1,12 @@
+.topbar{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    font-family: 'Lato';
+    box-sizing: border-box;
+}
+.topbar img{
+    margin: 1%;
+    width: 6%;
+   height: 70%;
+}

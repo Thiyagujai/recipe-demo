@@ -1,0 +1,15 @@
+<ng-container *ngIf="recipes | async; let recipe" >
+    <div class="container">
+        <div *ngFor="let r of recipe"  class="cards">
+            <mat-card [routerLink]="'/recipe/' + r.$key">
+                <img mat-card-image [src]="r.image" />
+                <mat-card-title>{{ r.nameofDish }}</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards">
+                <mat-card class="add-new" routerLink='/add'>
+                    <mat-icon class="icon">add</mat-icon>Add New Recipe
+                </mat-card>
+        </div>
+    </div> 
+</ng-container>

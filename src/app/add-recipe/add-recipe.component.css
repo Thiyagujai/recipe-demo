@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    padding:2% 8%;
+    
+}
+
+form{
+    width: 100vh;
+}
+
+mat-form-field{
+    width: 50%;
+}
+
+.form-field-desc{
+    height: 35vh;
+}

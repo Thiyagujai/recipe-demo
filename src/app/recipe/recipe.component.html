@@ -1,0 +1,25 @@
+<div class="container">
+    <ng-container *ngIf="recipeObs | async; let recipe">
+        <mat-card>
+            <div class="topic">
+                <div>
+                    <img mat-card-image [src]="recipe.image">
+                </div>
+               <div>
+                <mat-card-title>{{recipe.nameofDish}}</mat-card-title>
+                <br>
+                <mat-card-subtitle>Chef: {{recipe.nameofChef}}</mat-card-subtitle>
+                <mat-card-subtitle>Type of Meal : {{recipe.typeofMeal}}</mat-card-subtitle>
+                <mat-card-subtitle>Serves:  {{recipe.serves}}</mat-card-subtitle>
+               </div>
+            </div>
+            <mat-card-content>
+                <h2>List of Ingredients </h2>
+                <li *ngFor="let i of recipe.ingredients"> {{i.nameofIngredient}} , {{i.quantity}}</li>
+                <br>
+                <h2>Preparation Steps</h2>
+                <p>{{recipe.description}}</p>
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
+</div>
