@@ -15,7 +15,7 @@
     "@angular/cdk": "^11.2.13",
     "@angular/common": "~12.2.16",
     "@angular/compiler": "~12.2.16",
-    "@angular/core": "^11.2.14",
+    "@angular/core": "^12.2.16",
     "@angular/fire": "^6.0.2",
     "@angular/forms": "~12.2.16",
     "@angular/material": "^11.2.13",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.5",
-    "@angular/cli": "^11.2.19",
+    "@angular/cli": "^12.2.18",
     "@angular/compiler-cli": "~12.2.16",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
