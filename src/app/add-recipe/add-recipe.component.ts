@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, UntypedFormArray, Validators } from '@angular/forms';
 import {RecipeAppService} from '../recipe-app.service'
 @Component({
   selector: 'app-add-recipe',
@@ -7,9 +7,9 @@ import {RecipeAppService} from '../recipe-app.service'
   styleUrls: ['./add-recipe.component.css'],
 })
 export class AddRecipeComponent implements OnInit {
-  addRecipeForm: FormGroup;
+  addRecipeForm: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder, private rs: RecipeAppService) {}
+  constructor(private fb: UntypedFormBuilder, private rs: RecipeAppService) {}
 
   ngOnInit(): void {
     this.addRecipeForm = this.fb.group({
@@ -24,10 +24,10 @@ export class AddRecipeComponent implements OnInit {
   }
 
   get ingredients() {
-    return this.addRecipeForm.get('ingredients') as FormArray;
+    return this.addRecipeForm.get('ingredients') as UntypedFormArray;
   }
 
-  ingredientsArray(): FormGroup {
+  ingredientsArray(): UntypedFormGroup {
     return this.fb.group({
       nameofIngredient: [''],
       quantity: [''],
