@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, SnapshotAction} from '@angular/fire/database';
+import { AngularFireDatabase, SnapshotAction} from '@angular/fire/compat/database';
 import { catchError, map, shareReplay } from 'rxjs/operators';
 
 @Injectable({
